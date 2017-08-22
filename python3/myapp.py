@@ -1,24 +1,10 @@
-x = 10
-print(x / 3)
-print(x // 3)
-print(x % 3)
-print(x ** 3)
+score = int(input("score?"))
 
-print("----")
+if score > 80:
+    print("Greate!")
+elif score > 60:
+    print("Good!")
+else:
+    print("So So...")
 
-y = 4
-y = y + 12
-y += 12
-
-print y
-
-print("----")
-
-print(True and False)
-print(True or False)
-print(not False)
-
-print("----")
-
-print("Hello" + "world")
-print("Hello" * 3)
+print("Greate!" if score > 80 else "soso...")
