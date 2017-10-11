@@ -1,13 +1,13 @@
 #include <stdio.h>
 
+void f(long a){
+  a += 100;
+  printf("%ld\n", a);
+}
+
 int main(void){
-  int a;
-  a = 10;
-
-  int *pa;
-  pa = &a;
-
-  printf("%d\n", *pa);
+  long a = 1000;
+  f(a);
 
   return 0;
 }
