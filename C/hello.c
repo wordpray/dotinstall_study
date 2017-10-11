@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 int main(void){
-  int x;
+  int score = 55;
 
-  x= 10%3;
-  x += 3;
-  x ++;
-
-  printf("%d\n", x);
+  if (score >= 60){
+    printf("OK!\n");
+  } else if (score >= 50){
+    printf("so so ...\n");
+  } else {
+    printf("NG!\n");
+  }
   return 0;
 }
