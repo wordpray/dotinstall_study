@@ -1,17 +1,16 @@
 #include <stdio.h>
 
 int main(void){
-  int m = 1;
+  int m;
 
-  while (m < 10){
+  for (m= 0; m < 10; m++){
+    if (m == 3){
+      continue;
+    }
+    if (m == 8){
+      break;
+    }
     printf("m: %d\n", m);
-    m ++;
   }
-
-  int n = 1;
-
-  do{
-    printf("n: %d\n", n);
-    n ++;
-  } while (n < 10);
+  return 0;
 }
