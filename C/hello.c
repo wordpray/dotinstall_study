@@ -1,13 +1,18 @@
 #include <stdio.h>
 
-void f(long *pa){
-  *pa = *pa + 100;
-  printf("%ld\n", *pa);
+void swap(int *pa, int *pb){
+  int tmp;
+
+  tmp = *pa;
+  *pa = *pb;
+  *pb = tmp;
 }
 
 int main(void){
-  long a = 1000;
-  f(&a);
+  int a = 5;
+  int b = 10;
 
+  swap(&a, &b);
+  printf("a: %d\n, b: %d\n", a, b);
   return 0;
 }
