@@ -1,25 +1,15 @@
 #include <stdio.h>
 
-float getMax(float a, float b);
-void sayHi(void);
+int a= 0;
 
-void sayHi(void){
-  printf("hi!\n");
+void f(void){
+  a++;
+  printf("a: %d\n", a);
 }
 
 int main(void){
-  float result;
-  result = getMax(2.3, 5.2);
-  printf("%f\n", result);
+  f();
+  printf("[Main]a: %d\n", a);
 
-  sayHi();
   return 0;
-}
-
-float getMax(float a, float b){
-  if (a >= b){
-    return a;
-  } else {
-    return b;
-  }
 }
