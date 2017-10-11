@@ -1,15 +1,16 @@
 #include <stdio.h>
 
-int a= 0;
-
 void f(void){
-  a++;
+  static int a = 0;
+  a ++;
   printf("a: %d\n", a);
 }
 
 int main(void){
   f();
-  printf("[Main]a: %d\n", a);
+  f();
+  f();
+  f();
 
   return 0;
 }
